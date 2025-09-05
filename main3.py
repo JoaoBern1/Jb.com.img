@@ -13,7 +13,7 @@ pygame.display.set_caption("Janela com Imagem")
 BG_COLOR = (86, 58, 35) # Cor de Fundo ( um tom esscuro)
 
 # Carregar a imagem
-image_file = "player.png" # coloque o nome da sua imagem aqui
+image_file = "Theo.png" # coloque o nome da sua imagem aqui
 if os.path.exists(image_file):
     img = pygame.image.load(image_file).convert_alpha() # carregar imagem
     img_rect= img.get_rect(center=(WIDTH // 2, HEIGHT // 2)) # Centralizar a imagem
@@ -37,14 +37,14 @@ keys = pygame.key.get_pressed()
 if keys[pygame.K_LAFT]:
 
 
-# Preencher o fundo
-screen.fill(BG_COLOR)
+    # Preencher o fundo
+    screen.fill(BG_COLOR)
 
-# Desenhar a imagem na tela
-screen.Blit(img, img_rect.topleft)
+    # Desenhar a imagem na tela
+    screen.Blit(img, img_rect.topleft)
 
-# Atualizar a tela
-pygame.display.flip()
+    # Atualizar a tela
+    pygame.display.flip()
 
 # Finalizar o Pygame
 pygame.quit()
